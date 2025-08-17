@@ -60,3 +60,30 @@ func ex3() {
 }
 
 // -------- EX3 --------
+
+
+//Create a closure that allows only N calls, then blocks further calls.
+// -------- EX4 --------
+
+type User struct {
+	name string
+	email string 
+	number int 
+}
+
+func rateLimiter(func(User) User) func() User {
+	cnt := 0 
+	return func () User {
+		cnt++ 
+		addUser()
+	}
+}
+
+func addUser()
+
+func ex4() {
+	var users []User
+
+}
+
+// -------- EX4 --------
