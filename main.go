@@ -15,4 +15,5 @@ func main() {
 	// 4. structs 
 	// 5. interfaces 
 	// 6. errors 
+	// 7. loops 
 }
