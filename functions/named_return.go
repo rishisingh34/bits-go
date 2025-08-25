@@ -1,7 +1,6 @@
 // name_return.go
 package main
 
-
 // namedReturn demonstrates the use of **named return values** in Go.
 //
 // In Go, you can declare return variable names in the function signature.
@@ -18,17 +17,17 @@ package main
 //  2. Bare returns without context may be confusing.
 //
 // Example:
-//  func divide(x, y int) (result int, err error) {
-//      if y == 0 {
-//          err = fmt.Errorf("cannot divide by zero")
-//          return // returns (0, err)
-//      }
-//      result = x / y
-//      return // returns (result, nil)
-//  }
+//
+//	func divide(x, y int) (result int, err error) {
+//	    if y == 0 {
+//	        err = fmt.Errorf("cannot divide by zero")
+//	        return // returns (0, err)
+//	    }
+//	    result = x / y
+//	    return // returns (result, nil)
+//	}
 //
 // In this example, both `result` and `err` are named return variables.
-//
 func namedReturn() (sum int, product int) {
 	// Named returns: sum and product are already declared with type int, initialized to 0
 	a, b := 5, 10

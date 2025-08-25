@@ -38,10 +38,10 @@ func closure() {
 	firstCounter := counter()
 	secondCounter := counter()
 
-	fmt.Println("First Counter:", firstCounter()) // 1
-	fmt.Println("First Counter:", firstCounter()) // 2
+	fmt.Println("First Counter:", firstCounter())   // 1
+	fmt.Println("First Counter:", firstCounter())   // 2
 	fmt.Println("Second Counter:", secondCounter()) // 1
-	fmt.Println("First Counter:", firstCounter()) // 3
+	fmt.Println("First Counter:", firstCounter())   // 3
 
 	// Example 3: Closure as a function generator
 	// Let's make a multiplier generator

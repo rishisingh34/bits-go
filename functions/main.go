@@ -1,41 +1,85 @@
-package main 
+package main
 
 import (
 	"fmt"
 )
 
 func main() {
-	// 1. function signature 
-	fmt.Println(absSub(5,10))
+	var option int
+	fmt.Print("Enter the option: ")
+	fmt.Scan(&option)
 
-	// 2. multiple paramaters 
-	multipleParameters(30, 10, "Goblin")
+	switch option {
+	case 1:
 
-	// 3. complex signature 
-	complexSignature(absSub, 20, 15)
+		// 1. function signature
+		fmt.Println(absSub(5, 10))
 
-	// 4. pass by value 
-	passByValue()
+	case 2:
 
-	// 5. ignoring return values
-	x, _ := ingnoringReturnValues()
-	fmt.Println("Printing only first value:", x)
+		// 2. multiple paramaters
+		multipleParameters(30, 10, "Goblin")
 
-	// 6. named return
-	sum, product := namedReturn()
-	fmt.Printf("Named return - Sum: %d, Product: %d\n", sum, product)
+	case 3:
 
-	// 7. anonymous function 
-	anonymousFunc()	
+		// 3. complex signature
+		complexSignature(absSub, 20, 15)
 
-	// 8. defer keyword
-	useDefer()
+	case 4:
 
-	//9. closure
-	closure()
+		// 4. pass by value
+		passByValue()
 
-	// 10. closure examples
-	ex1()
-	ex2()
-	ex3()
+	case 5:
+
+		// 5. ignoring return values
+		x, _ := ingnoringReturnValues()
+		fmt.Println("Printing only first value:", x)
+
+	case 6:
+
+		// 6. named return
+		sum, product := namedReturn()
+		fmt.Printf("Named return - Sum: %d, Product: %d\n", sum, product)
+
+	case 7:
+
+		// 7. anonymous function
+		anonymousFunc()
+
+	case 8:
+
+		// 8. defer keyword
+		useDefer()
+
+	case 9:
+
+		//9. closure
+		closure()
+
+	case 10:
+
+		// 10. closure examples
+		ex1()
+		ex2()
+		ex3()
+		ex4()
+
+	case 11:
+
+		// 11. Currying
+		currying()
+
+	case 12:
+
+		// 12. currying examples
+		curr_ex1()
+		curr_ex2()
+		curr_ex3()
+		curr_ex4()
+
+	default:
+		fmt.Println("Invalid Option")
+	}
+
 }

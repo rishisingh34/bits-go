@@ -7,9 +7,9 @@ func anonymousFunc() {
 	newX, newY, newZ := conversions(double, 1, 2, 3)
 	// newX is 2, newY is 4, newZ is 6
 
-    // using an anonymous function
+	// using an anonymous function
 	newX1, newY1, newZ1 := conversions(func(a int) int {
-	    return a + a
+		return a + a
 	}, 1, 2, 3)
 	// newX is 2, newY is 4, newZ is 6
 	fmt.Println("Converted values using named function:", newX, newY, newZ)
@@ -23,5 +23,5 @@ func conversions(converter func(int) int, x, y, z int) (int, int, int) {
 	return convertedX, convertedY, convertedZ
 }
 func double(a int) int {
-	return 2*a
+	return 2 * a
 }
