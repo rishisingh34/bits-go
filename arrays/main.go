@@ -8,7 +8,6 @@ func main() {
 	fmt.Print("Choose an option: ")
 	fmt.Scan(&option)
 
-
 	switch option {
 		case 1:
 			// 1. declaration 
@@ -16,7 +15,7 @@ func main() {
 
 			fmt.Println(myInts)
 			// initialization
-			for i := 0; i < 10; i++ {
+			for i := range 10 {
 				myInts[i] = i * 2
 			}
 			// usage
@@ -28,7 +27,8 @@ func main() {
 			myInts := [10]int{0, 2, 4, 6, 8, 10, 12, 14, 16, 18}
 			fmt.Println(myInts)
 		case 3:
-			fmt.Println("Option 3 selected")
+			// making a slice 
+			sliceInGo()
 		default:
 			fmt.Println("Invalid option")
 	}
