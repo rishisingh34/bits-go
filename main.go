@@ -15,6 +15,7 @@ func main() {
 	// 5. interfaces
 	// 6. errors
 	// 7. loops
+	// 8. slices
 
 	test()
 }

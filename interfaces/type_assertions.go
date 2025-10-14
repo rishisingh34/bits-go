@@ -5,7 +5,7 @@ import (
 )
 
 func typeAssertions() {
-	var x interface{} = "hello"
+	var x any = "hello"
 	s, ok := x.(string)
 	if ok {
 		fmt.Println(s)
