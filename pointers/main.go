@@ -36,12 +36,12 @@ func main() {
 
 	case 5:
 		// 5. nil pointer
-		var p *int
-		if p == nil {
-			fmt.Println("p is a nil pointer")
-		} else {
-			fmt.Println("p is not a nil pointer")
-		}
+		// var p *int
+		// if p == nil {
+		// 	fmt.Println("p is a nil pointer")
+		// } else {
+		// 	fmt.Println("p is not a nil pointer")
+		// }
 
 	case 6:
 		// 6. pointer to struct
