@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"bits/go/conversions"
 )
 
 func main() {
@@ -18,6 +19,9 @@ func main() {
 	// 8. slices
 	// 9. maps
 	// 10. pointers
+
+	// 11. conversions -- package import and usage
+	conversions.Convert()
 
 
 
