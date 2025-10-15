@@ -16,6 +16,20 @@ func main() {
 	// 6. errors
 	// 7. loops
 	// 8. slices
+	// 9. maps
+	// 10. pointers
+
+
+
+	// ---> Topics to cover
+	// 11. goroutines
+	// 12. channels
+	// 13. packages
+	// 14. generics
+	// 15. file handling
+	// 16. web servers
+	// 17. databases
+	// 18. testing
 
 	test()
 }
